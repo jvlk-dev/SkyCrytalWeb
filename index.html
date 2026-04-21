@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--CSS-->
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <!--JS-->
+    <script src="index.js"></script>
+    <script src="animations.js"></script>
+    <!--Title-->
+    <title>Sky Crystal</title>
+    <link rel="icon" type="image/x-icon" href="images/crystal_logo_colored.png">
+    <!--Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/9526c175c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up shake-icon"></i>
+      </button>
+
+    
+<!-------------------------------Menu-------------------------------->
+<div class="Wallpaper">
+    <img class="BG" src="images/CloudWallpaper.png">
+    <div class="Logo"><img class="image" src="images/crystal_logo.png"></div>
+    <div id="mySidenav" class="sidenav">
+        <div class="menu">
+            <a onclick="scrollToGallery()">Gallery</a>
+            <a onclick="scrollToAbout()">About</a>
+            <a onclick="scrollToAbout()">Contacts</a>
+        </div>
+        <a id="Burger"><i class="fa-solid fa-bars"></i></a>
+    </div>
+</div>
+
+<!-------------------------------Gallery-------------------------------->
+<div class="Gallery" id="Gallery">
+    <p id="GalleryHeadline">GALLERY</p>
+
+    <div class="GalleryContent">
+        <div class="NextAndPrevious">
+            <a class="prev" onclick="plusSlides(-1)"><span class="shake-text">❮</span></a>
+        </div>
+        <div class="Slideshow">
+
+            <div class="slidesPage fade">
+                <img src="art/sword1.png">
+                <img src="art/sword2.png">
+                <img src="art/sword3.png">
+                <img src="art/sword4.png">
+                <img src="art/sword5.png">
+                <img src="art/sword6.png">
+                <img src="art/sword7.png">
+                <img src="art/empty.png">
+                <img src="art/empty.png">
+            </div>
+
+
+            <div class="slidesPage fade">
+                <img src="art/empty.png">
+                <img src="art/empty.png">
+                <img src="art/empty.png">
+                <img src="art/empty.png">
+                <img src="art/empty.png">
+                <img src="art/empty.png">
+                <img src="art/empty.png">
+                <img src="art/empty.png">
+                <img src="art/empty.png">
+            </div>
+
+
+            
+        </div>
+        <div class="NextAndPrevious">
+            <a class="next" onclick="plusSlides(1)"><span class="shake-text">❯</span></a>
+          </div>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+
+        <span class="dot" onclick="currentSlide(2)"></span> 
+
+    </div>
+        
+
+    <!--<div class="Images">
+        <img class="image" src="art/BugattiSword1.png">
+        <img class="image" src="art/Sword_Whole.png">
+        <img class="image" src="art/Sword_Whole.png">
+        <img class="image" src="art/Sword2.png">
+        <img class="image" src="art/Sword3.png">
+        <img class="image" src="art/SwordMain.png">
+        <img class="image" src="art/BugattiSword Whole.png">
+        <img class="image" src="art/BugattiSword1.png">
+        <img class="image" src="art/Sword2.png">
+    </div>
+-->
+</div>
+
+<!-------------------------------About-------------------------------->
+<div id="About">
+    <p id="AboutHeadline"><img class="image" src="images/ABOUT_title.png"></p>
+    <div class="AboutBG">
+        <div class="AboutText">
+            <a>I am a student majoring in IT, though my main focus is on design, 3D models and art.</a>
+            <a>Aside from my studies and art I am currently making my own game in the style of Risk of Rain 2.</a>
+            <a>You can find me on Sketchfab or Asset Store in the links below.</a>
+        </div>
+    </div>
+</div>
+
+<!-------------------------------Contacts-------------------------------->
+<div class="Contacts" id="Contacts">
+    <p id="ContactHeadline"><img class="image" src="images/CONTACTS_title.png"></p>
+
+    <div class="ContactsSectioned">
+        <div class="Links">
+            <p>skycrystalbusiness@gmail.com</p>
+        </div>
+        <div class="Icons">
+            <p><a href="https://sketchfab.com/skycrystal"><img class="image" src="images/icon_unity.png"></a></p>
+            <p><a href="https://sketchfab.com/skycrystal"><img class="image" src="images/icon_sketchfab.png"></a></p>
+            <p><a><img class="image" src="images/icon_unreal.png"></a></p>
+        </div>
+    </div>
+</div>
+<!-------------------------------Footer-------------------------------->
+<div class="Copyright">
+    <p>COPYRIGHT 2024 | SkyCrystal.</p>
+</div>
+
+</body>
+
+</html>
